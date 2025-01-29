@@ -1,0 +1,16 @@
+.button {
+  padding: 16px;
+  color: #1f1f1f;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 10px;
+}
+
+/* 다른 모듈 css에서 사용하려면 :global 문법 사용해야함 (모듈 css에서 제공하는 기능)*/
+:global(.light) .button {
+  color: #f9f9f9;
+  background-color: #505050;
+}
